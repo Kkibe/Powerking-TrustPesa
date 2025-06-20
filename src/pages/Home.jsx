@@ -169,8 +169,8 @@ export default function Home({ userData }) {
       <section>
         <div className="jobs-flyer" style={{ width: '100%', padding: '5px' }}>
           <h1>Join The Winning Team</h1>
-          <h1>Get VIP memmbership for 1 month with as little as KSH 3000.</h1>
-          <NavLink to={"/pay"} className='btn' onClick={() => setPrice(3000)}>Subscribe Now</NavLink>
+          <h1>Get VIP memmbership for 1 month with as little as KSH 750.</h1>
+          <NavLink to={"/pay"} className='btn' onClick={() => setPrice(750)}>Subscribe Now</NavLink>
         </div>
       </section>
     </div>

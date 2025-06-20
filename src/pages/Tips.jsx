@@ -122,7 +122,7 @@ export default function Tips({ userData }) {
 
   return (
     <div className="tips">
-      <AppHelmet title={"Powerking Tips"} location={'/'} />
+      <AppHelmet title={"Trust Pesa"} location={'/'} />
       <div className='container'>
         <div className="filter-wrapper">
           <p>{formattedDate}</p>

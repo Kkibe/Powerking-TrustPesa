@@ -41,7 +41,7 @@ const Footer = ({ user }) => {
             </div>
             <hr />
             <div className='footer-bottom theme'>
-                <p>&copy; Powerking Tips {new Date().getFullYear()}</p>
+                <p>&copy; Trust Pesa {new Date().getFullYear()}</p>
                 <NavLink to={'/about#faq'} title='what people ask'>FAQ</NavLink>
                 {isAdmin && <>
                     <NavLink to="/admin/tips" title='contact'>ADD TIP</NavLink>

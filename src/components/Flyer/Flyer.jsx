@@ -28,7 +28,7 @@ export default function Flyer() {
     <div className='flyer'>
       <h1 className='title'>Expert Football Tips!</h1>
       <h2 className='title'>Join Us and Win high today!</h2>
-      <NavLink to={'pay'} className='btn' onClick={() => setPrice(3000)}>GET STARTED</NavLink>
+      <NavLink to={'pay'} className='btn' onClick={() => setPrice(750)}>GET STARTED</NavLink>
       <div className="scroll">
         <div className="scroll-track">
           {
