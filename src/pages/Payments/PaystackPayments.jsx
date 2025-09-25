@@ -48,14 +48,14 @@ export default function PaystackPayments({ setUserData }) {
 
 
   const returnPeriod = () => {
-    if (price === 100) {
-      return 'Daily'
-    } else if (price === 250) {
-      return 'Weekly'
+    if (price === 8000) {
+      return 'Yearly'
     } else if (price === 750) {
+      return 'Weekly'
+    } else if (price === 1500) {
       return 'Monthly'
     } else {
-      return 'Yearly'
+      return 'Daily'
     }
   }
 
@@ -63,7 +63,7 @@ export default function PaystackPayments({ setUserData }) {
     reference: (new Date()).getTime().toString(),
     email: currentUser.email,
     amount: price * 100,
-    publicKey: 'pk_live_362b1c5a898c1cbcc3997049f738136211f625bf',
+    publicKey: 'pk_live_1e35aa9c51b1ac2d3b5aa876686d71e574ff92f7',
     currency: "KES",
     metadata: {
       name: currentUser.email,
@@ -83,19 +83,19 @@ export default function PaystackPayments({ setUserData }) {
       <AppHelmet title={"Pay"} location={'/pay'} />
       <form>
         <fieldset>
-          <input name="prices" type="radio" value={100} id="daily" checked={price === 100 ? true : false} onChange={(e) => setPrice(100)} />
+          <input name="prices" type="radio" value={150} id="daily" checked={price === 150 ? true : false} onChange={(e) => setPrice(150)} />
           <label htmlFor="daily">Daily VIP</label>
-          <span className="price">KSH 100</span>
+          <span className="price">KSH 150</span>
         </fieldset>
         <fieldset>
-          <input name="prices" type="radio" value={250} id="weekly" checked={price === 250 ? true : false} onChange={(e) => setPrice(250)} />
+          <input name="prices" type="radio" value={750} id="weekly" checked={price === 750 ? true : false} onChange={(e) => setPrice(750)} />
           <label htmlFor="weekly">7 Days VIP</label>
-          <span className="price">KSH 250</span>
+          <span className="price">KSH 750</span>
         </fieldset>
         <fieldset>
-          <input name="prices" type="radio" value={750} id="monthly" checked={price === 750 ? true : false} onChange={(e) => setPrice(750)} />
+          <input name="prices" type="radio" value={1500} id="monthly" checked={price === 1500 ? true : false} onChange={(e) => setPrice(1500)} />
           <label htmlFor="monthly">30 Days VIP</label>
-          <span className="price">KSH 750</span>
+          <span className="price">KSH 1500</span>
         </fieldset>
         <fieldset>
           <input name="prices" type="radio" value={8000} id="yearly" checked={price === 8000 ? true : false} onChange={(e) => setPrice(8000)} />
